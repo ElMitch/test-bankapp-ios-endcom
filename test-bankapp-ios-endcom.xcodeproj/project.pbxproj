@@ -31,6 +31,7 @@
 		525DB76C2708587100E745DC /* CardOfAccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB76B2708587100E745DC /* CardOfAccountImageView.swift */; };
 		52F9673C2708BB6800A25360 /* MovementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */; };
 		52FF52BC27091E8100DF6235 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52BB27091E8100DF6235 /* FormTextField.swift */; };
+		52FF52BF270924F600DF6235 /* FormNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52BE270924F600DF6235 /* FormNewCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		525DB76B2708587100E745DC /* CardOfAccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOfAccountImageView.swift; sourceTree = "<group>"; };
 		52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsTableViewCell.swift; sourceTree = "<group>"; };
 		52FF52BB27091E8100DF6235 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		52FF52BE270924F600DF6235 /* FormNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormNewCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			children = (
 				525DB7592708417F00E745DC /* TableViewCells */,
 				525DB74127082B5800E745DC /* Home */,
+				52FF52BD270924E000DF6235 /* Form */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -278,6 +281,14 @@
 				52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */,
 			);
 			path = Movements;
+			sourceTree = "<group>";
+		};
+		52FF52BD270924E000DF6235 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				52FF52BE270924F600DF6235 /* FormNewCardViewController.swift */,
+			);
+			path = Form;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +433,7 @@
 				525DB76C2708587100E745DC /* CardOfAccountImageView.swift in Sources */,
 				525DB76127084BAF00E745DC /* AccountsTableViewCell.swift in Sources */,
 				525DB71127082B3400E745DC /* AppDelegate.swift in Sources */,
+				52FF52BF270924F600DF6235 /* FormNewCardViewController.swift in Sources */,
 				525DB75B2708419800E745DC /* UserInfoTableViewCell.swift in Sources */,
 				525DB76A2708575400E745DC /* CardTableViewCell.swift in Sources */,
 				52FF52BC27091E8100DF6235 /* FormTextField.swift in Sources */,
