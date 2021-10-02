@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		525DB71127082B3400E745DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB71027082B3400E745DC /* AppDelegate.swift */; };
 		525DB71327082B3400E745DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB71227082B3400E745DC /* SceneDelegate.swift */; };
-		525DB71527082B3400E745DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB71427082B3400E745DC /* ViewController.swift */; };
 		525DB71827082B3400E745DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525DB71627082B3400E745DC /* Main.storyboard */; };
 		525DB71A27082B3500E745DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525DB71927082B3500E745DC /* Assets.xcassets */; };
 		525DB71D27082B3500E745DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525DB71B27082B3500E745DC /* LaunchScreen.storyboard */; };
 		525DB72827082B3500E745DC /* test_bankapp_ios_endcomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB72727082B3500E745DC /* test_bankapp_ios_endcomTests.swift */; };
 		525DB73327082B3500E745DC /* test_bankapp_ios_endcomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB73227082B3500E745DC /* test_bankapp_ios_endcomUITests.swift */; };
 		525DB74327082B6800E745DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB74227082B6800E745DC /* HomeViewController.swift */; };
+		525DB746270834A400E745DC /* AttributeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB745270834A400E745DC /* AttributeButton.swift */; };
+		525DB74B2708367100E745DC /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 525DB7492708366C00E745DC /* Roboto-Bold.ttf */; };
+		525DB74C2708367500E745DC /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 525DB74A2708366C00E745DC /* Roboto-Medium.ttf */; };
+		525DB74D2708367800E745DC /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 525DB7482708366C00E745DC /* Roboto-Regular.ttf */; };
+		525DB751270836C000E745DC /* UIFont+appFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB750270836C000E745DC /* UIFont+appFonts.swift */; };
+		525DB7532708396900E745DC /* UIColor+appColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB7522708396900E745DC /* UIColor+appColors.swift */; };
+		525DB75627083E4A00E745DC /* HeaderViewNavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB75527083E4A00E745DC /* HeaderViewNavItem.swift */; };
+		525DB75B2708419800E745DC /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB75A2708419800E745DC /* UserInfoTableViewCell.swift */; };
+		525DB75D2708438200E745DC /* BoldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB75C2708438200E745DC /* BoldLabel.swift */; };
+		525DB75F270847D900E745DC /* SectionTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB75E270847D900E745DC /* SectionTitleTableViewCell.swift */; };
+		525DB76127084BAF00E745DC /* AccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB76027084BAF00E745DC /* AccountsTableViewCell.swift */; };
+		525DB76427084DC600E745DC /* AccountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB76327084DC600E745DC /* AccountCollectionViewCell.swift */; };
+		525DB76A2708575400E745DC /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB7692708575400E745DC /* CardTableViewCell.swift */; };
+		525DB76C2708587100E745DC /* CardOfAccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB76B2708587100E745DC /* CardOfAccountImageView.swift */; };
+		52F9673C2708BB6800A25360 /* MovementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */; };
+		52FF52BC27091E8100DF6235 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52BB27091E8100DF6235 /* FormTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +54,6 @@
 		525DB70D27082B3400E745DC /* test-bankapp-ios-endcom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-bankapp-ios-endcom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525DB71027082B3400E745DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525DB71227082B3400E745DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		525DB71427082B3400E745DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		525DB71727082B3400E745DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		525DB71927082B3500E745DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525DB71C27082B3500E745DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +65,22 @@
 		525DB73227082B3500E745DC /* test_bankapp_ios_endcomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_bankapp_ios_endcomUITests.swift; sourceTree = "<group>"; };
 		525DB73427082B3500E745DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525DB74227082B6800E745DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		525DB745270834A400E745DC /* AttributeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeButton.swift; sourceTree = "<group>"; };
+		525DB7482708366C00E745DC /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		525DB7492708366C00E745DC /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		525DB74A2708366C00E745DC /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		525DB750270836C000E745DC /* UIFont+appFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+appFonts.swift"; sourceTree = "<group>"; };
+		525DB7522708396900E745DC /* UIColor+appColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+appColors.swift"; sourceTree = "<group>"; };
+		525DB75527083E4A00E745DC /* HeaderViewNavItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewNavItem.swift; sourceTree = "<group>"; };
+		525DB75A2708419800E745DC /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		525DB75C2708438200E745DC /* BoldLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoldLabel.swift; sourceTree = "<group>"; };
+		525DB75E270847D900E745DC /* SectionTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleTableViewCell.swift; sourceTree = "<group>"; };
+		525DB76027084BAF00E745DC /* AccountsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewCell.swift; sourceTree = "<group>"; };
+		525DB76327084DC600E745DC /* AccountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCollectionViewCell.swift; sourceTree = "<group>"; };
+		525DB7692708575400E745DC /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		525DB76B2708587100E745DC /* CardOfAccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOfAccountImageView.swift; sourceTree = "<group>"; };
+		52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsTableViewCell.swift; sourceTree = "<group>"; };
+		52FF52BB27091E8100DF6235 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +131,11 @@
 		525DB70F27082B3400E745DC /* test-bankapp-ios-endcom */ = {
 			isa = PBXGroup;
 			children = (
-				525DB74127082B5800E745DC /* Home */,
+				525DB7582708412800E745DC /* UI */,
+				525DB74E2708369D00E745DC /* Components */,
+				525DB744270831F100E745DC /* Common */,
 				525DB71027082B3400E745DC /* AppDelegate.swift */,
 				525DB71227082B3400E745DC /* SceneDelegate.swift */,
-				525DB71427082B3400E745DC /* ViewController.swift */,
 				525DB71627082B3400E745DC /* Main.storyboard */,
 				525DB71927082B3500E745DC /* Assets.xcassets */,
 				525DB71B27082B3500E745DC /* LaunchScreen.storyboard */,
@@ -137,6 +168,116 @@
 				525DB74227082B6800E745DC /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		525DB744270831F100E745DC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				525DB745270834A400E745DC /* AttributeButton.swift */,
+				525DB75527083E4A00E745DC /* HeaderViewNavItem.swift */,
+				525DB75C2708438200E745DC /* BoldLabel.swift */,
+				525DB76B2708587100E745DC /* CardOfAccountImageView.swift */,
+				52FF52BB27091E8100DF6235 /* FormTextField.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		525DB747270835BA00E745DC /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				525DB7492708366C00E745DC /* Roboto-Bold.ttf */,
+				525DB74A2708366C00E745DC /* Roboto-Medium.ttf */,
+				525DB7482708366C00E745DC /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		525DB74E2708369D00E745DC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				525DB74F270836AD00E745DC /* Extensions */,
+				525DB747270835BA00E745DC /* Font */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		525DB74F270836AD00E745DC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				525DB750270836C000E745DC /* UIFont+appFonts.swift */,
+				525DB7522708396900E745DC /* UIColor+appColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		525DB7582708412800E745DC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				525DB7592708417F00E745DC /* TableViewCells */,
+				525DB74127082B5800E745DC /* Home */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		525DB7592708417F00E745DC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				525DB76527084DDB00E745DC /* User */,
+				525DB76627084DE300E745DC /* SectionTitle */,
+				525DB76727084DF000E745DC /* Account */,
+				525DB7682708573800E745DC /* Card */,
+				52F9673A2708BB4700A25360 /* Movements */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		525DB76227084DAA00E745DC /* AccountCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				525DB76327084DC600E745DC /* AccountCollectionViewCell.swift */,
+			);
+			path = AccountCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		525DB76527084DDB00E745DC /* User */ = {
+			isa = PBXGroup;
+			children = (
+				525DB75A2708419800E745DC /* UserInfoTableViewCell.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		525DB76627084DE300E745DC /* SectionTitle */ = {
+			isa = PBXGroup;
+			children = (
+				525DB75E270847D900E745DC /* SectionTitleTableViewCell.swift */,
+			);
+			path = SectionTitle;
+			sourceTree = "<group>";
+		};
+		525DB76727084DF000E745DC /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				525DB76027084BAF00E745DC /* AccountsTableViewCell.swift */,
+				525DB76227084DAA00E745DC /* AccountCollectionViewCell */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		525DB7682708573800E745DC /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				525DB7692708575400E745DC /* CardTableViewCell.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		52F9673A2708BB4700A25360 /* Movements */ = {
+			isa = PBXGroup;
+			children = (
+				52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */,
+			);
+			path = Movements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +383,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525DB74D2708367800E745DC /* Roboto-Regular.ttf in Resources */,
+				525DB74C2708367500E745DC /* Roboto-Medium.ttf in Resources */,
 				525DB71D27082B3500E745DC /* LaunchScreen.storyboard in Resources */,
 				525DB71A27082B3500E745DC /* Assets.xcassets in Resources */,
+				525DB74B2708367100E745DC /* Roboto-Bold.ttf in Resources */,
 				525DB71827082B3400E745DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +413,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				525DB71527082B3400E745DC /* ViewController.swift in Sources */,
+				525DB7532708396900E745DC /* UIColor+appColors.swift in Sources */,
+				52F9673C2708BB6800A25360 /* MovementsTableViewCell.swift in Sources */,
+				525DB75627083E4A00E745DC /* HeaderViewNavItem.swift in Sources */,
+				525DB76427084DC600E745DC /* AccountCollectionViewCell.swift in Sources */,
+				525DB751270836C000E745DC /* UIFont+appFonts.swift in Sources */,
+				525DB75D2708438200E745DC /* BoldLabel.swift in Sources */,
+				525DB76C2708587100E745DC /* CardOfAccountImageView.swift in Sources */,
+				525DB76127084BAF00E745DC /* AccountsTableViewCell.swift in Sources */,
 				525DB71127082B3400E745DC /* AppDelegate.swift in Sources */,
+				525DB75B2708419800E745DC /* UserInfoTableViewCell.swift in Sources */,
+				525DB76A2708575400E745DC /* CardTableViewCell.swift in Sources */,
+				52FF52BC27091E8100DF6235 /* FormTextField.swift in Sources */,
+				525DB746270834A400E745DC /* AttributeButton.swift in Sources */,
 				525DB71327082B3400E745DC /* SceneDelegate.swift in Sources */,
+				525DB75F270847D900E745DC /* SectionTitleTableViewCell.swift in Sources */,
 				525DB74327082B6800E745DC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
