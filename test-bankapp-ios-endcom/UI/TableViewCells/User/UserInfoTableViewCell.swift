@@ -42,9 +42,11 @@ class UserInfoTableViewCell: UITableViewCell {
     }
     
     
-    func configWith(name: String, date: String) {
-        nameOfUser.setText(with: name, and: .white)
-        dateOfLastLogIn.setText(with: date, and: .green)
+    func configWith(with account: Account) {
+        nameOfUser.setText(with: account.name, and: .white)
+        var date = account.lastSession
+        date.removeLast(9)
+        dateOfLastLogIn.setText(with: "Ultimo inicio \(date)", and: .green)
     }
     
 }

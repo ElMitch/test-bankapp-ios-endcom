@@ -25,7 +25,7 @@ class FormNewCardViewController: UIViewController {
     private var nameTextField = FormTextField()
     private var branchTextField = FormTextField()
     private var statusTextField = FormTextField()
-    private var saldTextField = FormTextField()
+    private var balanceTextField = FormTextField()
     private var typeOfAccountTextField = FormTextField()
     private var cancelButton = AttributeButton()
     private var addButton = AttributeButton()
@@ -61,7 +61,7 @@ class FormNewCardViewController: UIViewController {
         nameTextField.translatesAutoresizingMaskIntoConstraints = false
         branchTextField.translatesAutoresizingMaskIntoConstraints = false
         statusTextField.translatesAutoresizingMaskIntoConstraints = false
-        saldTextField.translatesAutoresizingMaskIntoConstraints = false
+        balanceTextField.translatesAutoresizingMaskIntoConstraints = false
         typeOfAccountTextField.translatesAutoresizingMaskIntoConstraints = false
         cancelButton.translatesAutoresizingMaskIntoConstraints = false
         addButton.translatesAutoresizingMaskIntoConstraints = false
@@ -72,7 +72,7 @@ class FormNewCardViewController: UIViewController {
         nameTextField.delegate = self
         branchTextField.delegate = self
         statusTextField.delegate = self
-        saldTextField.delegate = self
+        balanceTextField.delegate = self
         typeOfAccountTextField.delegate = self
         
         numberOfCardTextField.addTarget(self, action: #selector(didChangeText(textField:)), for: .editingChanged)
@@ -89,7 +89,7 @@ class FormNewCardViewController: UIViewController {
         firstSV.distribution = .fillEqually
         firstSV.spacing = 13
         
-        let secondSV = UIStackView(arrangedSubviews: [ statusTextField, saldTextField ])
+        let secondSV = UIStackView(arrangedSubviews: [ statusTextField, balanceTextField ])
         secondSV.axis = .horizontal
         secondSV.alignment = .fill
         secondSV.distribution = .fillEqually
@@ -119,7 +119,7 @@ class FormNewCardViewController: UIViewController {
             nameTextField.heightAnchor.constraint(equalToConstant: 38),
             branchTextField.heightAnchor.constraint(equalToConstant: 38),
             statusTextField.heightAnchor.constraint(equalToConstant: 38),
-            saldTextField.heightAnchor.constraint(equalToConstant: 38),
+            balanceTextField.heightAnchor.constraint(equalToConstant: 38),
             typeOfAccountTextField.heightAnchor.constraint(equalToConstant: 38),
             
             mainSV.topAnchor.constraint(equalTo: addCardLabel.bottomAnchor, constant: 55),
@@ -134,7 +134,7 @@ class FormNewCardViewController: UIViewController {
             branchTextField.leadingAnchor.constraint(equalTo: mainSV.leadingAnchor, constant: 0),
             branchTextField.trailingAnchor.constraint(equalTo: mainSV.trailingAnchor, constant: 0),
             statusTextField.leadingAnchor.constraint(equalTo: mainSV.leadingAnchor, constant: 0),
-            saldTextField.trailingAnchor.constraint(equalTo: mainSV.trailingAnchor, constant: 0),
+            balanceTextField.trailingAnchor.constraint(equalTo: mainSV.trailingAnchor, constant: 0),
             typeOfAccountTextField.leadingAnchor.constraint(equalTo: mainSV.leadingAnchor, constant: 0),
             typeOfAccountTextField.trailingAnchor.constraint(equalTo: mainSV.trailingAnchor, constant: 0),
             
@@ -160,7 +160,7 @@ class FormNewCardViewController: UIViewController {
         nameTextField.setGrayPlaceHolder("Nombre de tarjeta")
         branchTextField.setGrayPlaceHolder("Marca")
         statusTextField.setGrayPlaceHolder("Estatus")
-        saldTextField.setGrayPlaceHolder("Saldo")
+        balanceTextField.setGrayPlaceHolder("Saldo")
         typeOfAccountTextField.setGrayPlaceHolder("Tipo de cuenta")
         addButton.addStyle("Agregar")
         cancelButton.cancelStyle("Cancelar")
@@ -211,8 +211,8 @@ extension FormNewCardViewController: UITextFieldDelegate {
             branchTextField.setSelected()
         } else if textField == statusTextField {
             statusTextField.setSelected()
-        } else if textField == saldTextField {
-            saldTextField.setSelected()
+        } else if textField == balanceTextField {
+            balanceTextField.setSelected()
         } else if textField == typeOfAccountTextField {
             typeOfAccountTextField.setSelected()
         }
@@ -231,8 +231,8 @@ extension FormNewCardViewController: UITextFieldDelegate {
             branchTextField.setDeselect()
         } else if textField == statusTextField {
             statusTextField.setDeselect()
-        } else if textField == saldTextField {
-            saldTextField.setDeselect()
+        } else if textField == balanceTextField {
+            balanceTextField.setDeselect()
         } else if textField == typeOfAccountTextField {
             typeOfAccountTextField.setDeselect()
         }

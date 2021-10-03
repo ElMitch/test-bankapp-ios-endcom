@@ -10,7 +10,14 @@ import UIKit
 class AccountsTableViewCell: UITableViewCell {
     static let identifier = "AccountsCell_identifier"
     
+    private enum TypeOfBalance: Int, CaseIterable {
+        case general = 0
+        case incomes = 1
+        case expenses = 2
+    }
+    
     private var collectionView: UICollectionView!
+    private var balance: Balance!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -43,6 +50,10 @@ class AccountsTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func passBalance(with balance: Balance) {
+        self.balance = balance
+    }
+    
     private func configureCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -59,12 +70,22 @@ extension AccountsTableViewCell: UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        2
+        TypeOfBalance.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AccountCollectionViewCell.identifier, for: indexPath) as! AccountCollectionViewCell
-        cell.configWith(type: "Saldo general en cuentas", sald: "$2,000.00")
+        let type = TypeOfBalance(rawValue: indexPath.row)
+        switch type {
+        case .general:
+            cell.configWith(type: "Saldo general en cuentas", balance: balance.generalBalance)
+        case .incomes:
+            cell.configWith(type: "Total de ingresos", balance: balance.income)
+        case .expenses:
+            cell.configWith(type: "Total de egresos", balance: balance.expenses)
+        default:
+            break
+        }
         return cell
     }
 }

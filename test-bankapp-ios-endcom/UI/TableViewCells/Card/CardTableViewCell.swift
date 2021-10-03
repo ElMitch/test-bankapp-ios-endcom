@@ -32,7 +32,7 @@ class CardTableViewCell: UITableViewCell {
     private let cardImage = CardOfAccountImageView()
     private let statusOfCard = UILabel()
     private let numberOfCard = UILabel()
-    private let saldOfCard = UILabel()
+    private let balanceOfCard = UILabel()
     private let nameOfUser = UILabel()
     private let typeOfUser = UILabel()
     
@@ -42,7 +42,7 @@ class CardTableViewCell: UITableViewCell {
         backgroundColor = .clear
         
         cardImage.translatesAutoresizingMaskIntoConstraints = false
-        saldOfCard.translatesAutoresizingMaskIntoConstraints = false
+        balanceOfCard.translatesAutoresizingMaskIntoConstraints = false
         
         let mainSV = UIStackView(arrangedSubviews: [ statusOfCard, numberOfCard, nameOfUser, typeOfUser ])
         mainSV.axis = .vertical
@@ -52,7 +52,7 @@ class CardTableViewCell: UITableViewCell {
         mainSV.translatesAutoresizingMaskIntoConstraints = false
         
         contentView.addSubview(cardImage)
-        contentView.addSubview(saldOfCard)
+        contentView.addSubview(balanceOfCard)
         contentView.addSubview(mainSV)
         
         NSLayoutConstraint.activate([
@@ -65,9 +65,9 @@ class CardTableViewCell: UITableViewCell {
             mainSV.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
             mainSV.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -5),
             
-            saldOfCard.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
-            saldOfCard.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -17),
-            saldOfCard.leadingAnchor.constraint(equalTo: mainSV.trailingAnchor, constant: 11)
+            balanceOfCard.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5),
+            balanceOfCard.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -17),
+            balanceOfCard.leadingAnchor.constraint(equalTo: mainSV.trailingAnchor, constant: 11)
         ])
         
     }
@@ -77,13 +77,17 @@ class CardTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configureWith() {
-        cardImage.active()
-        statusOfCard.attributedText = .init(string: "Activa", attributes: Constants.status)
-        numberOfCard.attributedText = .init(string: "5439 2401 1234 1234", attributes: Constants.number)
-        nameOfUser.attributedText = .init(string: "Berenice García López", attributes: Constants.name)
-        typeOfUser.attributedText = .init(string: "Titular", attributes: Constants.typeOfUser)
-        saldOfCard.attributedText = .init(string: "$1,500", attributes: Constants.number)
+    func configureWith(card: Card) {
+        if card.state == "activa" {
+            cardImage.active()
+        } else {
+            cardImage.inactive()
+        }
+        statusOfCard.attributedText = .init(string: card.state.capitalized, attributes: Constants.status)
+        numberOfCard.attributedText = .init(string: card.card.modifyCreditCardString(), attributes: Constants.number)
+        nameOfUser.attributedText = .init(string: card.name, attributes: Constants.name)
+        typeOfUser.attributedText = .init(string: card.type.capitalized, attributes: Constants.typeOfUser)
+        balanceOfCard.attributedText = .init(string: "\(card.balance.toCurrency())", attributes: Constants.number)
     }
     
 }

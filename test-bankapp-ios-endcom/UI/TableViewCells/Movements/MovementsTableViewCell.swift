@@ -62,7 +62,7 @@ class MovementsTableViewCell: UITableViewCell {
             
             movementsSV.topAnchor.constraint(equalTo: roundedView.topAnchor, constant: 5),
             movementsSV.leadingAnchor.constraint(equalTo: roundedView.leadingAnchor, constant: 26),
-            movementsSV.trailingAnchor.constraint(equalTo: ammountOfMovement.leadingAnchor, constant: 20),
+            movementsSV.trailingAnchor.constraint(equalTo: ammountOfMovement.leadingAnchor, constant: -20),
             
             ammountOfMovement.trailingAnchor.constraint(equalTo: roundedView.trailingAnchor, constant: -34),
             ammountOfMovement.topAnchor.constraint(equalTo: roundedView.topAnchor, constant: 5),
@@ -94,10 +94,12 @@ class MovementsTableViewCell: UITableViewCell {
         seeMoreButton.isHidden = true
     }
     
-    func configWithMovement() {
-        nameOfMovement.setText(with: "UBER BV", and: .description)
-        dateOfMovement.setText(with: "10/05/2021", and: .date)
-        ammountOfMovement.setText(with: "- $250.00", and: .description)
+    func configWith(movement: Movement) {
+        nameOfMovement.setText(with: movement.description, and: .description)
+        dateOfMovement.setText(with: movement.date, and: .date)
+        let ammountInt = Double(movement.ammount)
+        ammountOfMovement.setText(with: movement.type == "abono" ? "\(ammountInt?.toCurrencyWithCents() ?? "")" : "-\(ammountInt?.toCurrencyWithCents() ?? "")", and: .description)
+        ammountOfMovement.textColor = movement.type == "abono" ? .clearGreen : .red
         NSLayoutConstraint.activate([
             roundedView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0)
         ])

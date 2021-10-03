@@ -17,10 +17,15 @@ class HomeViewController: UITableViewController {
     }
     
     private var headerView = HeaderViewNavItem()
+    private var accounts: [Account] = []
+    private var balances: [Balance] = []
+    private var cards: [Card] = []
+    private var movements: [Movement] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        fetchInfo()
     }
     
     func setupView() {
@@ -41,6 +46,25 @@ class HomeViewController: UITableViewController {
         tableView.register(MovementsTableViewCell.self, forCellReuseIdentifier: MovementsTableViewCell.identifier)
     }
     
+    private func fetchInfo() {
+        NetworkManager.shared.getAccount { accountsResponse in
+            self.accounts = accountsResponse.accounts
+            self.tableView.reloadData()
+        }
+        NetworkManager.shared.getBalances { balanceResponse in
+            self.balances = balanceResponse.balance
+            self.tableView.reloadData()
+        }
+        NetworkManager.shared.getCards { cardsResponse in
+            self.cards = cardsResponse.card
+            self.tableView.reloadData()
+        }
+        NetworkManager.shared.getMovements { movementResponse in
+            self.movements = movementResponse.movement.sorted { $0.id > $1.id }
+            self.tableView.reloadData()
+        }
+    }
+    
 }
 
 extension HomeViewController {
@@ -54,13 +78,13 @@ extension HomeViewController {
         
         switch section {
         case .user:
-            return 1
+            return accounts.count
         case .account:
-            return 2
+            return balances.count + 1
         case .cards:
-            return 3
+            return cards.count + 1
         case .movements:
-            return 5
+            return movements.count == 0 ? 0 : 5
         }
     }
     
@@ -69,7 +93,7 @@ extension HomeViewController {
         
         if section == .user {
             let cell = tableView.dequeueReusableCell(withIdentifier: UserInfoTableViewCell.identifier, for: indexPath) as! UserInfoTableViewCell
-            cell.configWith(name: "Daniel Samaniego", date: "Ultimo inicio 08/06/2021")
+            cell.configWith(with: accounts[indexPath.row])
             return cell
         }
         
@@ -79,7 +103,8 @@ extension HomeViewController {
                 cell.configTwoButtons()
                 return cell
             } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: AccountsTableViewCell.identifier, for: indexPath)
+                let cell = tableView.dequeueReusableCell(withIdentifier: AccountsTableViewCell.identifier, for: indexPath) as! AccountsTableViewCell
+                cell.passBalance(with: balances[indexPath.row - 1])
                 return cell
             }
         }
@@ -92,7 +117,7 @@ extension HomeViewController {
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: CardTableViewCell.identifier, for: indexPath) as! CardTableViewCell
-                cell.configureWith()
+                cell.configureWith(card: cards[indexPath.row - 1])
                 return cell
             }
         }
@@ -104,9 +129,9 @@ extension HomeViewController {
                 return cell
             } else if indexPath.row < 4 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: MovementsTableViewCell.identifier, for: indexPath) as! MovementsTableViewCell
-                cell.configWithMovement()
+                cell.configWith(movement: movements[indexPath.row - 1])
                 return cell
-            } else if indexPath.row == 4{
+            } else if indexPath.row == 4 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: MovementsTableViewCell.identifier, for: indexPath) as! MovementsTableViewCell
                 cell.configWithButton()
                 return cell

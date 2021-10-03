@@ -1,0 +1,6 @@
+framework module Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests {
+  umbrella header "Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

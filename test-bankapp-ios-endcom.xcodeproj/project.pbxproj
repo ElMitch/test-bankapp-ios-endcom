@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0674B521744153A580973A91 /* Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA89B806ACF19A7CF1279218 /* Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests.framework */; };
+		521AB09D270957E000269FA4 /* Balances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB09C270957E000269FA4 /* Balances.swift */; };
+		521AB09F27095B2400269FA4 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB09E27095B2400269FA4 /* Cards.swift */; };
+		521AB0A127095CFF00269FA4 /* Movements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB0A027095CFF00269FA4 /* Movements.swift */; };
+		521AB0A327098C2F00269FA4 /* Int+currencyFormating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB0A227098C2F00269FA4 /* Int+currencyFormating.swift */; };
+		521AB0A527098E6400269FA4 /* String+CardFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521AB0A427098E6400269FA4 /* String+CardFormatter.swift */; };
 		525DB71127082B3400E745DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB71027082B3400E745DC /* AppDelegate.swift */; };
 		525DB71327082B3400E745DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525DB71227082B3400E745DC /* SceneDelegate.swift */; };
 		525DB71827082B3400E745DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525DB71627082B3400E745DC /* Main.storyboard */; };
@@ -32,6 +38,11 @@
 		52F9673C2708BB6800A25360 /* MovementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */; };
 		52FF52BC27091E8100DF6235 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52BB27091E8100DF6235 /* FormTextField.swift */; };
 		52FF52BF270924F600DF6235 /* FormNewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52BE270924F600DF6235 /* FormNewCardViewController.swift */; };
+		52FF52C227094F8F00DF6235 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52C127094F8F00DF6235 /* Endpoint.swift */; };
+		52FF52C4270950C800DF6235 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52C3270950C800DF6235 /* NetworkManager.swift */; };
+		52FF52C72709538400DF6235 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FF52C62709538400DF6235 /* Account.swift */; };
+		739547D0827BC94A7085E22B /* Pods_test_bankapp_ios_endcomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C25035876E50277399620327 /* Pods_test_bankapp_ios_endcomTests.framework */; };
+		88613903CA270F68DE240FB7 /* Pods_test_bankapp_ios_endcom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46497CD0D07AA4F3B59E6A4 /* Pods_test_bankapp_ios_endcom.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +63,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023E3B7F938CF9506E4E3839 /* Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.debug.xcconfig"; path = "Target Support Files/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F7BE19A50ADEC25AF242A5D /* Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.release.xcconfig"; path = "Target Support Files/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.release.xcconfig"; sourceTree = "<group>"; };
+		521AB09C270957E000269FA4 /* Balances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balances.swift; sourceTree = "<group>"; };
+		521AB09E27095B2400269FA4 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		521AB0A027095CFF00269FA4 /* Movements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movements.swift; sourceTree = "<group>"; };
+		521AB0A227098C2F00269FA4 /* Int+currencyFormating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+currencyFormating.swift"; sourceTree = "<group>"; };
+		521AB0A427098E6400269FA4 /* String+CardFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CardFormatter.swift"; sourceTree = "<group>"; };
 		525DB70D27082B3400E745DC /* test-bankapp-ios-endcom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-bankapp-ios-endcom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		525DB71027082B3400E745DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		525DB71227082B3400E745DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +101,16 @@
 		52F9673B2708BB6800A25360 /* MovementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsTableViewCell.swift; sourceTree = "<group>"; };
 		52FF52BB27091E8100DF6235 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		52FF52BE270924F600DF6235 /* FormNewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormNewCardViewController.swift; sourceTree = "<group>"; };
+		52FF52C127094F8F00DF6235 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		52FF52C3270950C800DF6235 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		52FF52C62709538400DF6235 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		7A0D739E577364F9B445DDF6 /* Pods-test-bankapp-ios-endcomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-bankapp-ios-endcomTests.debug.xcconfig"; path = "Target Support Files/Pods-test-bankapp-ios-endcomTests/Pods-test-bankapp-ios-endcomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A46497CD0D07AA4F3B59E6A4 /* Pods_test_bankapp_ios_endcom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_bankapp_ios_endcom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA89B806ACF19A7CF1279218 /* Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBA6F4660B3B69772DD9EC28 /* Pods-test-bankapp-ios-endcom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-bankapp-ios-endcom.debug.xcconfig"; path = "Target Support Files/Pods-test-bankapp-ios-endcom/Pods-test-bankapp-ios-endcom.debug.xcconfig"; sourceTree = "<group>"; };
+		C25035876E50277399620327 /* Pods_test_bankapp_ios_endcomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_test_bankapp_ios_endcomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A0DF0FCB86F0EF22B42969 /* Pods-test-bankapp-ios-endcom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-bankapp-ios-endcom.release.xcconfig"; path = "Target Support Files/Pods-test-bankapp-ios-endcom/Pods-test-bankapp-ios-endcom.release.xcconfig"; sourceTree = "<group>"; };
+		FBAE5F476C741B2B90E3047C /* Pods-test-bankapp-ios-endcomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test-bankapp-ios-endcomTests.release.xcconfig"; path = "Target Support Files/Pods-test-bankapp-ios-endcomTests/Pods-test-bankapp-ios-endcomTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88613903CA270F68DE240FB7 /* Pods_test_bankapp_ios_endcom.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739547D0827BC94A7085E22B /* Pods_test_bankapp_ios_endcomTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +134,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0674B521744153A580973A91 /* Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40720677D8737518B09CA422 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBA6F4660B3B69772DD9EC28 /* Pods-test-bankapp-ios-endcom.debug.xcconfig */,
+				D3A0DF0FCB86F0EF22B42969 /* Pods-test-bankapp-ios-endcom.release.xcconfig */,
+				023E3B7F938CF9506E4E3839 /* Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.debug.xcconfig */,
+				1F7BE19A50ADEC25AF242A5D /* Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.release.xcconfig */,
+				7A0D739E577364F9B445DDF6 /* Pods-test-bankapp-ios-endcomTests.debug.xcconfig */,
+				FBAE5F476C741B2B90E3047C /* Pods-test-bankapp-ios-endcomTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		525DB70427082B3400E745DC = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +161,8 @@
 				525DB72627082B3500E745DC /* test-bankapp-ios-endcomTests */,
 				525DB73127082B3500E745DC /* test-bankapp-ios-endcomUITests */,
 				525DB70E27082B3400E745DC /* Products */,
+				40720677D8737518B09CA422 /* Pods */,
+				82B3055E5D8E1AFF1E5DCB54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,9 +179,10 @@
 		525DB70F27082B3400E745DC /* test-bankapp-ios-endcom */ = {
 			isa = PBXGroup;
 			children = (
-				525DB7582708412800E745DC /* UI */,
-				525DB74E2708369D00E745DC /* Components */,
+				52FF52C027094C4200DF6235 /* Network */,
 				525DB744270831F100E745DC /* Common */,
+				525DB74E2708369D00E745DC /* Components */,
+				525DB7582708412800E745DC /* UI */,
 				525DB71027082B3400E745DC /* AppDelegate.swift */,
 				525DB71227082B3400E745DC /* SceneDelegate.swift */,
 				525DB71627082B3400E745DC /* Main.storyboard */,
@@ -208,6 +255,8 @@
 			children = (
 				525DB750270836C000E745DC /* UIFont+appFonts.swift */,
 				525DB7522708396900E745DC /* UIColor+appColors.swift */,
+				521AB0A227098C2F00269FA4 /* Int+currencyFormating.swift */,
+				521AB0A427098E6400269FA4 /* String+CardFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -291,6 +340,37 @@
 			path = Form;
 			sourceTree = "<group>";
 		};
+		52FF52C027094C4200DF6235 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52FF52C52709536800DF6235 /* Objects */,
+				52FF52C127094F8F00DF6235 /* Endpoint.swift */,
+				52FF52C3270950C800DF6235 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		52FF52C52709536800DF6235 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				52FF52C62709538400DF6235 /* Account.swift */,
+				521AB09C270957E000269FA4 /* Balances.swift */,
+				521AB09E27095B2400269FA4 /* Cards.swift */,
+				521AB0A027095CFF00269FA4 /* Movements.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		82B3055E5D8E1AFF1E5DCB54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A46497CD0D07AA4F3B59E6A4 /* Pods_test_bankapp_ios_endcom.framework */,
+				AA89B806ACF19A7CF1279218 /* Pods_test_bankapp_ios_endcom_test_bankapp_ios_endcomUITests.framework */,
+				C25035876E50277399620327 /* Pods_test_bankapp_ios_endcomTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,9 +378,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525DB73727082B3500E745DC /* Build configuration list for PBXNativeTarget "test-bankapp-ios-endcom" */;
 			buildPhases = (
+				0281DE342DCB90314C3BE53C /* [CP] Check Pods Manifest.lock */,
 				525DB70927082B3400E745DC /* Sources */,
 				525DB70A27082B3400E745DC /* Frameworks */,
 				525DB70B27082B3400E745DC /* Resources */,
+				94ED49F5B2DD265F1FB6911E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +397,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525DB73A27082B3500E745DC /* Build configuration list for PBXNativeTarget "test-bankapp-ios-endcomTests" */;
 			buildPhases = (
+				8A31B611496AE114C0A3454B /* [CP] Check Pods Manifest.lock */,
 				525DB71F27082B3500E745DC /* Sources */,
 				525DB72027082B3500E745DC /* Frameworks */,
 				525DB72127082B3500E745DC /* Resources */,
@@ -333,9 +416,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 525DB73D27082B3500E745DC /* Build configuration list for PBXNativeTarget "test-bankapp-ios-endcomUITests" */;
 			buildPhases = (
+				905B9E6EAA6CFEFDEB5647E5 /* [CP] Check Pods Manifest.lock */,
 				525DB72A27082B3500E745DC /* Sources */,
 				525DB72B27082B3500E745DC /* Frameworks */,
 				525DB72C27082B3500E745DC /* Resources */,
+				F6FB3BE944A9AB721ADDBBB8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,25 +504,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0281DE342DCB90314C3BE53C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-bankapp-ios-endcom-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A31B611496AE114C0A3454B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-bankapp-ios-endcomTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		905B9E6EAA6CFEFDEB5647E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94ED49F5B2DD265F1FB6911E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-bankapp-ios-endcom/Pods-test-bankapp-ios-endcom-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-bankapp-ios-endcom/Pods-test-bankapp-ios-endcom-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test-bankapp-ios-endcom/Pods-test-bankapp-ios-endcom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6FB3BE944A9AB721ADDBBB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests/Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		525DB70927082B3400E745DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FF52C4270950C800DF6235 /* NetworkManager.swift in Sources */,
 				525DB7532708396900E745DC /* UIColor+appColors.swift in Sources */,
 				52F9673C2708BB6800A25360 /* MovementsTableViewCell.swift in Sources */,
 				525DB75627083E4A00E745DC /* HeaderViewNavItem.swift in Sources */,
 				525DB76427084DC600E745DC /* AccountCollectionViewCell.swift in Sources */,
+				521AB09F27095B2400269FA4 /* Cards.swift in Sources */,
+				521AB0A327098C2F00269FA4 /* Int+currencyFormating.swift in Sources */,
+				52FF52C72709538400DF6235 /* Account.swift in Sources */,
 				525DB751270836C000E745DC /* UIFont+appFonts.swift in Sources */,
+				521AB09D270957E000269FA4 /* Balances.swift in Sources */,
 				525DB75D2708438200E745DC /* BoldLabel.swift in Sources */,
 				525DB76C2708587100E745DC /* CardOfAccountImageView.swift in Sources */,
+				521AB0A527098E6400269FA4 /* String+CardFormatter.swift in Sources */,
 				525DB76127084BAF00E745DC /* AccountsTableViewCell.swift in Sources */,
 				525DB71127082B3400E745DC /* AppDelegate.swift in Sources */,
 				52FF52BF270924F600DF6235 /* FormNewCardViewController.swift in Sources */,
+				52FF52C227094F8F00DF6235 /* Endpoint.swift in Sources */,
 				525DB75B2708419800E745DC /* UserInfoTableViewCell.swift in Sources */,
 				525DB76A2708575400E745DC /* CardTableViewCell.swift in Sources */,
 				52FF52BC27091E8100DF6235 /* FormTextField.swift in Sources */,
 				525DB746270834A400E745DC /* AttributeButton.swift in Sources */,
+				521AB0A127095CFF00269FA4 /* Movements.swift in Sources */,
 				525DB71327082B3400E745DC /* SceneDelegate.swift in Sources */,
 				525DB75F270847D900E745DC /* SectionTitleTableViewCell.swift in Sources */,
 				525DB74327082B6800E745DC /* HomeViewController.swift in Sources */,
@@ -613,6 +809,7 @@
 		};
 		525DB73827082B3500E745DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA6F4660B3B69772DD9EC28 /* Pods-test-bankapp-ios-endcom.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -632,6 +829,7 @@
 		};
 		525DB73927082B3500E745DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A0DF0FCB86F0EF22B42969 /* Pods-test-bankapp-ios-endcom.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -651,6 +849,7 @@
 		};
 		525DB73B27082B3500E745DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A0D739E577364F9B445DDF6 /* Pods-test-bankapp-ios-endcomTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -673,6 +872,7 @@
 		};
 		525DB73C27082B3500E745DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBAE5F476C741B2B90E3047C /* Pods-test-bankapp-ios-endcomTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -695,6 +895,7 @@
 		};
 		525DB73E27082B3500E745DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023E3B7F938CF9506E4E3839 /* Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -715,6 +916,7 @@
 		};
 		525DB73F27082B3500E745DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7BE19A50ADEC25AF242A5D /* Pods-test-bankapp-ios-endcom-test-bankapp-ios-endcomUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

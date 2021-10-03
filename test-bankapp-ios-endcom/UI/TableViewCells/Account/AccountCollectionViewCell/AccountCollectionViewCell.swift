@@ -15,7 +15,7 @@ class AccountCollectionViewCell: UICollectionViewCell {
             .font: UIFont.roboto(.medium, size: 18),
             .foregroundColor: UIColor.oceanBlue
         ]
-        static let sald: [NSAttributedString.Key: Any] = [
+        static let balance: [NSAttributedString.Key: Any] = [
             .font: UIFont.roboto(.bold, size: 22),
             .foregroundColor: UIColor.clearGreen
         ]
@@ -23,7 +23,7 @@ class AccountCollectionViewCell: UICollectionViewCell {
     
     private let cardOfAccount = UIView()
     private let typeOfAccount = UILabel()
-    private let saldLabel = UILabel()
+    private let balanceLabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,14 +32,14 @@ class AccountCollectionViewCell: UICollectionViewCell {
         
         cardOfAccount.translatesAutoresizingMaskIntoConstraints = false
         typeOfAccount.translatesAutoresizingMaskIntoConstraints = false
-        saldLabel.translatesAutoresizingMaskIntoConstraints = false
+        balanceLabel.translatesAutoresizingMaskIntoConstraints = false
         
         cardOfAccount.backgroundColor = .darkBlue
         typeOfAccount.numberOfLines = 0
         
         contentView.addSubview(cardOfAccount)
         cardOfAccount.addSubview(typeOfAccount)
-        cardOfAccount.addSubview(saldLabel)
+        cardOfAccount.addSubview(balanceLabel)
         
         cardOfAccount.layer.cornerRadius = 3
         
@@ -57,9 +57,9 @@ class AccountCollectionViewCell: UICollectionViewCell {
             typeOfAccount.leadingAnchor.constraint(equalTo: cardOfAccount.leadingAnchor, constant: 17),
             typeOfAccount.trailingAnchor.constraint(equalTo: cardOfAccount.trailingAnchor, constant: -94),
             
-            saldLabel.trailingAnchor.constraint(equalTo: cardOfAccount.trailingAnchor, constant: -15),
-            saldLabel.bottomAnchor.constraint(equalTo: cardOfAccount.bottomAnchor, constant: -20),
-            saldLabel.leadingAnchor.constraint(equalTo: cardOfAccount.leadingAnchor, constant: 109)
+            balanceLabel.trailingAnchor.constraint(equalTo: cardOfAccount.trailingAnchor, constant: -15),
+            balanceLabel.bottomAnchor.constraint(equalTo: cardOfAccount.bottomAnchor, constant: -20),
+            balanceLabel.leadingAnchor.constraint(equalTo: cardOfAccount.leadingAnchor, constant: 109)
         ])
     }
     
@@ -67,9 +67,9 @@ class AccountCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configWith(type: String, sald: String) {
+    func configWith(type: String, balance: Int) {
         typeOfAccount.attributedText = .init(string: type, attributes: Constants.typeOfAccount)
-        saldLabel.attributedText = .init(string: sald, attributes: Constants.sald)
+        balanceLabel.attributedText = .init(string: balance.toCurrency(), attributes: Constants.balance)
     }
     
 }
