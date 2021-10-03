@@ -48,12 +48,14 @@ class AttributeButton: UIButton {
     func cancelStyle(_ title: String) {
         let attTitle = NSAttributedString(string: title, attributes: Constants.cancelAndAddButton)
         self.backgroundColor = .lineGray
+        self.layer.cornerRadius = 3
         setAttributedTitle(attTitle, for: .normal)
     }
     
     func addStyle(_ title: String) {
         let attTitle = NSAttributedString(string: title, attributes: Constants.cancelAndAddButton)
         self.backgroundColor = .clearGreen
+        self.layer.cornerRadius = 3
         setAttributedTitle(attTitle, for: .normal)
     }
 }
