@@ -77,6 +77,7 @@ class FormNewCardViewController: UIViewController {
         
         numberOfCardTextField.addTarget(self, action: #selector(didChangeText(textField:)), for: .editingChanged)
         cancelButton.addTarget(self, action: #selector(returnToHome), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(showJsonAlert), for: .touchUpInside)
         
         view.addSubview(cardImage)
         view.addSubview(addCardLabel)
@@ -168,6 +169,25 @@ class FormNewCardViewController: UIViewController {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    @objc func showJsonAlert() {
+        let alert = UIAlertController(title: "Funcionalidad JSON",
+                                      message: """
+                                                    {
+                                                    tarjeta: "\(self.numberOfCardTextField.text ?? "nil")",
+                                                    cuenta: "\(self.accountTextField.text  ?? "nil")",
+                                                    issure: "\(self.issureTextField.text  ?? "nil")",
+                                                    nombre: "\(self.nameTextField.text  ?? "nil")",
+                                                    marca: "\(self.branchTextField.text  ?? "nil")",
+                                                    estatus: "\(self.statusTextField.text  ?? "nil")",
+                                                    saldo: \(self.balanceTextField.text  ?? "nil"),
+                                                    tipo: "\(self.typeOfAccountTextField.text  ?? "nil")",
+                                                                }
+                                                    """,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @objc func returnToHome() {
