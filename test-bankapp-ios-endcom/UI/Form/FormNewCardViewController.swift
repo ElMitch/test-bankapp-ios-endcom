@@ -75,6 +75,9 @@ class FormNewCardViewController: UIViewController {
         balanceTextField.delegate = self
         typeOfAccountTextField.delegate = self
         
+        numberOfCardTextField.keyboardType = .numberPad
+        balanceTextField.keyboardType = .numberPad
+        
         numberOfCardTextField.addTarget(self, action: #selector(didChangeText(textField:)), for: .editingChanged)
         cancelButton.addTarget(self, action: #selector(returnToHome), for: .touchUpInside)
         addButton.addTarget(self, action: #selector(showJsonAlert), for: .touchUpInside)
@@ -264,5 +267,26 @@ extension FormNewCardViewController: UITextFieldDelegate {
              return newLength <= 19
          }
          return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == numberOfCardTextField {
+            accountTextField.becomeFirstResponder()
+        } else if textField == accountTextField {
+            issureTextField.becomeFirstResponder()
+        } else if textField == issureTextField {
+            nameTextField.becomeFirstResponder()
+        } else if textField == nameTextField {
+            branchTextField.becomeFirstResponder()
+        } else if textField == branchTextField {
+            statusTextField.becomeFirstResponder()
+        } else if textField == statusTextField {
+            balanceTextField.becomeFirstResponder()
+        } else if textField == balanceTextField {
+            typeOfAccountTextField.becomeFirstResponder()
+        } else if textField == typeOfAccountTextField {
+            typeOfAccountTextField.resignFirstResponder()
+        }
+        return true
     }
 }
